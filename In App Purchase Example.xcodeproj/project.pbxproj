@@ -13,6 +13,7 @@
 		2CD8CA5819CC586F00EC54CF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CD8CA5719CC586F00EC54CF /* Images.xcassets */; };
 		2CD8CA5B19CC586F00EC54CF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CD8CA5919CC586F00EC54CF /* LaunchScreen.xib */; };
 		2CD8CA6719CC586F00EC54CF /* In_App_Purchase_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8CA6619CC586F00EC54CF /* In_App_Purchase_ExampleTests.swift */; };
+		2CD8CA7119CC590600EC54CF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD8CA7019CC590600EC54CF /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		2CD8CA6019CC586F00EC54CF /* In App Purchase ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "In App Purchase ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD8CA6519CC586F00EC54CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CD8CA6619CC586F00EC54CF /* In_App_Purchase_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = In_App_Purchase_ExampleTests.swift; sourceTree = "<group>"; };
+		2CD8CA7019CC590600EC54CF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CD8CA7119CC590600EC54CF /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		2CD8CA4219CC586F00EC54CF = {
 			isa = PBXGroup;
 			children = (
+				2CD8CA7019CC590600EC54CF /* StoreKit.framework */,
 				2CD8CA4D19CC586F00EC54CF /* In App Purchase Example */,
 				2CD8CA6319CC586F00EC54CF /* In App Purchase ExampleTests */,
 				2CD8CA4C19CC586F00EC54CF /* Products */,
@@ -161,6 +165,7 @@
 				TargetAttributes = {
 					2CD8CA4A19CC586F00EC54CF = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = XF3FB883VW;
 					};
 					2CD8CA5F19CC586F00EC54CF = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -338,6 +343,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "In App Purchase Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -348,6 +354,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "In App Purchase Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -407,6 +414,7 @@
 				2CD8CA6C19CC586F00EC54CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CD8CA6D19CC586F00EC54CF /* Build configuration list for PBXNativeTarget "In App Purchase ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +423,7 @@
 				2CD8CA6F19CC586F00EC54CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
