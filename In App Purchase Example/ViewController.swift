@@ -16,6 +16,7 @@ class ViewController: UIViewController, SKProductsRequestDelegate, SKPaymentTran
     override func viewDidLoad() {
         product_id = "iap.comsumable";
         super.viewDidLoad()
+        SKPaymentQueue.defaultQueue().addTransactionObserver(self)
         addBotton();
     }
     
@@ -105,5 +106,4 @@ class ViewController: UIViewController, SKProductsRequestDelegate, SKPaymentTran
     }
 
 }
-
 
